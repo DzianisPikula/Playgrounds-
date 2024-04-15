@@ -40,4 +40,17 @@ remainderOfDevisionNumber(num1: 10, num2: 3)
 
 
 
+//2
+
+
+func recursionFibo(number: Int) -> Int {
+    if number == 0 {
+        return 0
+    } else if number == 1 {
+        return 1
+    }
+    return recursionFibo(number: number - 1) + recursionFibo(number: number - 2)
+}
+
+recursionFibo(number: 11)
 
